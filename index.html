@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Red+Hat+Display:wght@500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+
+<body class="grid">
+  <main class="card">
+    <article class="card__image">
+      <img src="images/illustration-hero.svg" alt="hero image" class="card__hero">
+    </article>
+    <article class="card__summary grid">
+      <h1 class="card__h1 fw-black">Order Summary</h1>
+      <p class="card__text text-color">You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+      <article class="card__pricing grid">
+        <section class="card__price flex">
+          <img src="images/icon-music.svg" alt="music icon" class="card__icon">
+          <section class="card__price-frequency">
+            <p class="fw-black">Annual Plan</p>
+            <p class="text-color">$59.99/year</p>
+          </section>
+        </section>
+        <button class="card__change fw-bold">Change</button>
+      </article>
+      <article class="card__buttons flex">
+        <button class="card__proceed fw-black button">Proceed to Payment</button>
+        <button class="card__cancel fw-black button">Cancel Order</button>
+      </article>
+    </article>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/JohnMcDoe" target="_blank">JohnMcDoe</a>.
+    </div>
+  </footer>
+</body>
+
+</html>

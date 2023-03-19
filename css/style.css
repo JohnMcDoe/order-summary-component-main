@@ -1,0 +1,190 @@
+/* Custom properties */
+:root {
+    --clr-primary-general-1: 225 100% 94%;
+    --clr-primary-button-1: 245 75% 52%;
+    
+    --clr-neutral-bg-1: 225 100% 98%;
+    --clr-neutral-button-1-active: 223 47% 23%;
+    --clr-neutral-text-1: 224 23% 55%;
+
+    --ff-general: "Red Hat Display", sans-serif;
+    
+    --fw-general: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    --fs-general: 1rem;
+}
+
+/* CSS reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100svh;
+    line-height: 1.5;
+}
+
+canvas,
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Utility classes */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+}
+
+.text-color {
+    color: hsl(var(--clr-neutral-text-1));
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-black {
+    font-weight: var(--fw-black);
+}
+
+.button {
+    padding: 1em;
+    border-radius: 0.75em;
+    border: none;
+}
+
+/* Components */
+body {
+    gap: min(5em, 10%);
+    place-content: center;
+    font-family: var(--ff-general);
+    font-weight: var(--fw-general);
+    font-size: var(--fs-general);
+    background-color: hsl(var(--clr-primary-general-1));
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (min-width: 30em) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+    }
+}
+
+.card {
+    max-width: 375px;
+    min-width: 375px;
+    border-radius: 1.5em;
+    overflow: hidden;
+    box-shadow: 0 0.0625em 1em 0 hsl(0, 0%, 0%, 0.2);
+}
+
+.card__summary {
+    gap: 1em;
+    padding: 1.5em;
+    text-align: center;
+    background-color: white;
+}
+
+.card__pricing {
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    padding: 1.25em;
+    border-radius: 1em;
+    background-color: hsl(var(--clr-neutral-bg-1));
+}
+
+.card__price {
+    gap: 1em;
+    justify-content: start;
+    align-items: center;
+}
+
+.card__icon {
+    border-radius: 50%;
+}
+
+.card__change {
+    justify-self: end;
+    text-decoration: underline;
+    border: none;
+    color: hsl(var(--clr-primary-button-1));
+    background-color: inherit;
+}
+
+.card__change:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.card__buttons {
+    flex-flow: column wrap;
+    gap: 1em;
+}
+
+.card__proceed {
+    color: hsl(var(--clr-primary-general-1));
+    background-color: hsl(var(--clr-primary-button-1));
+}
+
+.card__proceed:hover {
+    opacity: 0.5;
+}
+
+.card__cancel {
+    color: hsl(var(--clr-neutral-text-1));
+    background-color: inherit;
+}
+
+.card__cancel:hover {
+    color: black;
+}
+
+.card__change:hover,
+.card__proceed:hover,
+.card__cancel:hover {
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
