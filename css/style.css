@@ -93,15 +93,16 @@ body {
     font-family: var(--ff-general);
     font-weight: var(--fw-general);
     font-size: var(--fs-general);
-    background-color: hsl(var(--clr-primary-general-1));
-    background-image: url("images/pattern-background-mobile.svg");
+    background: url("../images/pattern-background-mobile.svg"), hsl(var(--clr-primary-general-1));
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 @media screen and (min-width: 30em) {
     body {
-        background-image: url("images/pattern-background-desktop.svg");
+        background: url("../images/pattern-background-desktop.svg"), hsl(var(--clr-primary-general-1));
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 
