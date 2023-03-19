@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solutions](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solutions](https://www.frontendmentor.io/solutions/responsive-summary-card-using-htmlcss-G4JxrSebrd)
+- Live Site URL: [GitHub Pages](https://johnmcdoe.github.io/order-summary-component-main/)
 
 ## My process
 
